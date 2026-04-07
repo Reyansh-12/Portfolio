@@ -1,0 +1,45 @@
+.about-container {
+    background: radial-gradient(circle at 50% 50%, #121212 0%, #0a0a0a 100%);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(142, 240, 13, 0.5); 
+}
+
+.border-start-info {
+    border-left: 4px solid #42f00d !important;
+}
+
+.border-end-info {
+    border-right: 4px solid #42f00d !important;
+}
+
+@media (max-width: 991px) {
+    .timeline-line {
+        left: 20px !important;
+    }
+    .reveal-card {
+        padding-left: 40px !important;
+        text-align: left !important;
+    }
+}
+.text-para{
+    font-family: "Acme", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.text-info{
+    color: rgb(72, 255, 0) !important;
+}
+.timeline-line {
+    background-color: #42f00d;
+}

@@ -1,0 +1,43 @@
+.cursor-dot {
+    position: fixed;
+    top: 0; left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #68f00d;
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-follower {
+    position: fixed;
+    top: 0; left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(96, 240, 13, 0.5);
+    border-radius: 50%;
+    z-index: 9998;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-particle {
+    position: fixed;
+    top: 0; left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(77, 240, 13, 0.6);
+    border-radius: 50%;
+    z-index: 9997;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    cursor: none !important;
+}
+
+a, button, .nav-link {
+    cursor: none !important; 
+}

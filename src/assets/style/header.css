@@ -1,6 +1,40 @@
-.home:hover{
-    color: rgb(30, 151, 250);
+.nav-custom-link {
+    position: relative;
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    padding: 5px 0 !important;
 }
-.name-heading{
-    font-size: 80px;
+
+.nav-custom-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #73f00d; 
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-custom-link:hover::after {
+    width: 100%;
+}
+
+.nav-custom-link.active {
+    color: #60f00d !important;
+}
+
+.nav-custom-link.active::after {
+    width: 100%;
+}
+
+.navbar-nav:hover .nav-custom-link:not(:hover) {
+    opacity: 0.6;
+}
+.nav-custom-link{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
