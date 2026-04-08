@@ -31,7 +31,14 @@ const Projects = () => {
             category: "Interactive / Personal",
             tech: ["React", "GSAP"],
             image: "https://via.placeholder.com/600x400/1a1a1a/9DFF2F?text=Project+3"
-        }
+        },
+        {
+            id: 4,
+            title: "Cold Drink",
+            category: "Animation / Interactive",
+            tech: ["HTML", "GSAP"],
+            image: "https://via.placeholder.com/600x400/1a1a1a/9DFF2F?text=Project+2"
+        },
     ];
 
     useEffect(() => {
@@ -70,7 +77,7 @@ const Projects = () => {
                     {projectData.map((project) => (
                         <div key={project.id} className="project-slide">
                             <div className="project-modern-card">
-                                <div className="row g-0 h-100">
+                                <div className="row">
                                     <div className="col-md-7 h-100">
                                         <div className="project-image-wrapper">
                                             <img src={project.image} alt={project.title} className="img-fluid" />
@@ -82,7 +89,7 @@ const Projects = () => {
                                     <div className="col-md-5 d-flex align-items-center p-5">
                                         <div className="project-content">
                                             <span className="text-primary-neon fw-bold">{project.category}</span>
-                                            <h3 className="display-5 fw-bold text-white mt-2 mb-4">{project.title}</h3>
+                                            <p className="display-6 fw-bold text-white mt-2 mb-4">{project.title}</p>
                                             <div className="d-flex gap-2 mb-4">
                                                 {project.tech.map((t, i) => (
                                                     <span key={i} className="tech-badge">{t}</span>

@@ -1,3 +1,4 @@
-body{
-    background: #0D0D0D;
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
 }

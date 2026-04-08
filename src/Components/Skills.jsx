@@ -84,8 +84,7 @@ const Skills = () => {
             <div className="container">
                 <div className="row mb-5 text-center">
                     <div className="col-12">
-                        <h2 className="display-4 fw-bold text-white mb-3">Technical <span className="text-primary-neon">Stack</span></h2>
-                        <p className="text-dim">Hover over cards to interact</p>
+                        <h2 className="display-4 fw-bold text-white mb-3">Technical <span className="text-primary-neon">Skills</span></h2>
                     </div>
                 </div>
 
