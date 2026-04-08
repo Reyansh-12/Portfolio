@@ -1,133 +1,162 @@
-.cube-container {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 20%; 
-    left: 20%;
-    transform-style: preserve-3d;
-    perspective: 2000px; 
-    pointer-events: none; 
-    z-index: 0;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Syne:wght@400;800&display=swap');
+
+:root {
+    --primary: #68f00d;
+    --dark: #0a0a0a;
+    --grey: #1a1a1a;
+    --text-white: #f5f5f5;
+    --text-dim: #888888;
 }
 
-.cube-group {
+.home-root {
+    background-color: var(--dark);
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
+    overflow: hidden;
+    position: relative;
+    color: var(--text-white);
+    font-family: 'Space Grotesk', sans-serif;
 }
 
-.cube-face {
+.noise-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    opacity: 0.03;
+    pointer-events: none;
+    background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+}
+
+.bg-circle {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    background: rgba(13, 202, 240, 0.05); 
-    border: 1px solid rgba(13, 202, 240, 0.4); 
-    box-shadow: 0 0 30px rgba(13, 202, 240, 0.1);
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(circle, rgba(104, 240, 13, 0.144) 0%, transparent 70%);
+    top: 10%;
+    right: 5%;
+    border-radius: 50%;
+    filter: blur(80px);
+    
+}
+
+.main-content {
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    color: white;
-}
-
-.front  { transform: rotateY(0deg) translateZ(100px); }
-.back   { transform: rotateY(180deg) translateZ(100px); }
-.right  { transform: rotateY(90deg) translateZ(100px); }
-.left   { transform: rotateY(-90deg) translateZ(100px); }
-.top    { transform: rotateX(90deg) translateZ(100px); }
-.bottom { transform: rotateX(-90deg) translateZ(100px); }
-
-/* .download-resume-btn{
-    border-color: rgba(77, 240, 13, 0.651);
-    color: rgba(77, 240, 13, 0.651) !important;
-}
-.download-resume-btn:hover{
-    background-color: rgba(77, 240, 13, 0.651) !important;
-    color: white !important;
-} */
-.hero-title {
-    font-size: 65px;
-    font-family: "Paprika", system-ui;
-    font-weight: 400;
-    background: linear-gradient(#4df00d, #0ff00d) no-repeat;
-    background-size: 0% 100%;
-    background-color: rgba(255, 255, 255, 0.1); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: white;
-    transition: background-size 1s ease-in-out;
-}
-
-.hero-title:hover {
-    background-size: 100% 100% !important;
-}
-.profile-image{
-    border-color: rgba(77, 240, 13, 0.651) !important;
-    background-image: url('../../assets/Images/profile.png');
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 30px rgba(77, 240, 13, 0.3);
-}
-
-.download-resume-btn {
     position: relative;
-    z-index: 1;
-    font-size: 20px;
+    z-index: 5;
+}
+
+.title-mask {
     overflow: hidden;
-    border: 2px solid #69db34; 
-    transition: color 0.4s;
+    height: auto;
 }
-.download-resume-btn:before, 
-.download-resume-btn:after {
+
+.main-heading {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(3.5rem, 10vw, 7.5rem);
+    font-weight: 800;
+    line-height: 0.85;
+    margin: 0;
+    text-transform: uppercase;
+}
+.highlight {
+    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+    color: transparent;
+}
+
+.text-primary-color { color: var(--primary); }
+.text-dim { color: var(--text-dim); }
+
+.hero-p {
+    font-size: 1.1rem;
+    color: var(--text-dim);
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.name-bold {
+    color: var(--text-white);
+    font-weight: 700;
+}
+
+.btn-main {
+    background: var(--primary);
+    color: #000;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(104, 240, 13, 0.4);
+}
+
+.btn-outline {
+    background: transparent;
+    border-bottom: 2px solid var(--primary);
+    color: var(--text-white);
+    padding: 10px 0;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.get-resume-button{
+    border: 1px solid #68f00d !important;
+}
+.get-resume-button:hover{
+    box-shadow: #68f00d 0px 0px 8px, #68f00d 0px 0px 16px;
+    color: #68f00d !important;
+}
+
+.visual-element {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.profile-mask {
+    width: 100%;
+    height: 100%;
+    background: var(--grey);
+    border-radius: 200px 200px 20px 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.profile-img-bg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--dark), transparent), url('https://via.placeholder.com/600x800'); /* REPLACE IMAGE HERE */
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+.bottom-bar {
     position: absolute;
-    top: 50%;
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-color: #6ce21e;
-    border-radius: 50%;
-    z-index: -1;
+    bottom: 50px;
+    right: 100px;
+    gap: 60px;
 }
-.download-resume-btn:before {
-    left: -30px;
-    transform: translate(-50%, -50%);
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
 }
-.download-resume-btn:after {
-    right: -30px;
-    transform: translate(50%, -50%);
+
+.stat-num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
 }
-.download-resume-btn:hover:before {
-    animation: criss-cross-left 1.2s both;
-    animation-direction: alternate;
-}
-.download-resume-btn:hover:after {
-    animation: criss-cross-right 1.2s both;
-    animation-direction: alternate;
-}
-@keyframes criss-cross-left {
-    0% { left: -30px; }
-    50% {
-        left: 50%;
-        width: 20px;
-        height: 20px;
-    }
-    100% {
-        left: 50%;
-        width: 375px; 
-        height: 375px;
-    }
-}
-@keyframes criss-cross-right {
-    0% { right: -30px; }
-    50% {
-        right: 50%;
-        width: 20px;
-        height: 20px;
-    }
-    100% {
-        right: 50%;
-        width: 375px; 
-        height: 375px;
-    }
+
+.stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-dim);
 }

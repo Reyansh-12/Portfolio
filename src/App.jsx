@@ -5,6 +5,8 @@ import Home from './Components/Home';
 import Cursor from './Components/Cursor';
 import About from './Components/About';
 import './assets/style/cursor.css'; 
+import Skills from './Components/Skills';
+import Projects from './Components/Projects';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Header />
       <Home />
       <About />
+      <Skills />
+      <Projects />
     </div>
   );
 }

@@ -1,43 +1,45 @@
 .cursor-dot {
     position: fixed;
     top: 0; left: 0;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-color: #68f00d;
+    border-radius: 50%;
+    z-index: 10000;
+    pointer-events: none;
+    margin: -7px 0 0 -7px; 
+    
+}
+
+.cursor-tail-segment {
+    position: fixed;
+    top: 0; left: 0;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(104, 240, 13, 0.7);
     border-radius: 50%;
     z-index: 9999;
     pointer-events: none;
-    transform: translate(-50%, -50%);
-}
-
-.cursor-follower {
-    position: fixed;
-    top: 0; left: 0;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(96, 240, 13, 0.5);
-    border-radius: 50%;
-    z-index: 9998;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
+    margin: -6px 0 0 -6px;
+    will-change: transform; 
 }
 
 .cursor-particle {
     position: fixed;
     top: 0; left: 0;
-    width: 10px;
-    height: 10px;
-    background-color: rgba(77, 240, 13, 0.6);
+    width: 6px;
+    height: 6px;
+    background-color: rgba(77, 240, 13, 0.4);
     border-radius: 50%;
-    z-index: 9997;
+    z-index: 9998;
     pointer-events: none;
-    transform: translate(-50%, -50%);
+    margin: -3px 0 0 -3px;
 }
 
 body {
     cursor: none !important;
 }
 
-a, button, .nav-link {
-    cursor: none !important; 
+a, button {
+    cursor: none !important;
 }
