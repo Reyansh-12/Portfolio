@@ -1,0 +1,58 @@
+.resume-section {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.text-dim {
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+.text-primary-neon {
+    color: #9DFF2F; 
+}
+
+.ls-5 { letter-spacing: 5px; }
+
+.experience-item .dot {
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    width: 11px;
+    height: 11px;
+    background: #9DFF2F;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #9DFF2F;
+}
+
+.tech-pill {
+    background: rgba(157, 255, 47, 0.1);
+    border: 1px solid rgba(157, 255, 47, 0.3);
+    color: #9DFF2F;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.tech-pill:hover {
+    background: #9DFF2F;
+    color: #000;
+}
+
+.border-secondary {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.main-project-link {
+    text-decoration: none;
+    color: #9DFF2F;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.main-project-link:hover {
+    border-bottom: 2px solid #9DFF2F;
+}

@@ -44,11 +44,11 @@ const Home = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className="home-root">
+        <div ref={containerRef} className="home-root pb-5">
             <div className="bg-circle" />
             <div className="noise-overlay" />
 
-            <div className="main-content">
+            <div className="main-content mt-5">
                 <div className=" px-md-5">
                     <div className="row align-items-center">
                         
@@ -60,13 +60,13 @@ const Home = () => {
                                 </div>
 
                                 <div className="title-mask">
-                                    <h1 className="reveal-text main-heading mb-3" style={{fontSize:'60px'}}>Architecting</h1>
+                                    <h1 className="reveal-text main-heading mb-3">Architecting</h1>
                                 </div>
                                 <div className="title-mask">
-                                    <h1 className="reveal-text main-heading highlight mb-3" style={{fontSize:'118px'}}>Digital</h1>
+                                    <h1 className="reveal-text main-heading highlight mb-3" >Digital</h1>
                                 </div>
                                 <div className="title-mask">
-                                    <h1 className="reveal-text main-heading" style={{fontSize:'79px'}}>Solutions</h1>
+                                    <h1 className="reveal-text main-heading">Solutions</h1>
                                 </div>
 
                                 <div className="description-box mt-4">
@@ -101,7 +101,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="bottom-bar d-none d-md-flex">
+            <div className="bottom-bar d-none d-md-flex ">
                 <div className="stat-item">
                     <span className="stat-num">01+</span>
                     <span className="stat-label">Years Exp.</span>

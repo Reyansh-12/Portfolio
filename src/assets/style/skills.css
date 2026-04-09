@@ -5,7 +5,7 @@
 }
 
 .text-primary-neon {
-    color: #9DFF2F;
+    color: #68f00d;
     text-shadow: 0 0 10px rgba(157, 255, 47, 0.3);
 }
 
@@ -19,7 +19,7 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
     padding: 30px 25px;
     border-radius: 24px;
-    transform-style: preserve-3d; /* Important for 3D tilt */
+    transform-style: preserve-3d; 
     transition: border-color 0.3s ease;
     cursor: crosshair;
 }
@@ -34,7 +34,7 @@
     font-size: 1.1rem;
     font-weight: 700;
     margin: 0;
-    transform: translateZ(20px); /* Makes text pop out on tilt */
+    transform: translateZ(20px); 
 }
 
 .percent-tag {
@@ -57,7 +57,7 @@
     height: 100%;
     border-radius: 100px;
     position: relative;
-    box-shadow: 0 0 15px currentColor; /* Dynamic glow based on skill color */
+    box-shadow: 0 0 15px currentColor; 
 }
 
 .fill-light {
