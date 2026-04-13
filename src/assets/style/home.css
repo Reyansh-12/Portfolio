@@ -116,6 +116,9 @@
     box-shadow: #68f00d 0px 0px 8px, #68f00d 0px 0px 16px;
     color: #68f00d !important;
 }
+.btn:hover{
+    background: transparent;
+}
 
 .visual-element {
     position: relative;

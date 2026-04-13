@@ -5,14 +5,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './Components/Header';
 import Home from './Components/Home';
-import Cursor from './Components/Cursor'; 
+import Cursor from './Components/Cursor';
 import About from './Components/About';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Resume from './Components/Resume';
+import CaseStudy from './Components/CaseStudy';
 
-import './assets/style/cursor.css'; 
+import './assets/style/cursor.css';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <div className="App">
         <Cursor />
         <Header />
-        
+
         <Routes>
           <Route path="/" element={
             <>
@@ -33,6 +34,7 @@ function App() {
           } />
 
           <Route path="/resume" element={<Resume />} />
+          <Route path="/case-study/:projectId" element={<CaseStudy />} />
         </Routes>
       </div>
     </BrowserRouter>
