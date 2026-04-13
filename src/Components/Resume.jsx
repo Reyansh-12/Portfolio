@@ -36,7 +36,7 @@ const Resume = () => {
                             <h6 className="text-primary-neon text-uppercase ls-5">My Journey</h6>
                             <h2 className="display-3 fw-bold text-white">Resume</h2>
                         </div>
-                        <a href="/path-to-your-pdf.pdf" download className="main-project-link mb-2">
+                        <a href="/path-to-your-pdf.pdf" download className="main-project-link mb-2 text-black">
                             Download CV <FaDownload className="ms-2" />
                         </a>
                     </div>
@@ -71,7 +71,7 @@ const Resume = () => {
                             <div className="experience-item ps-4 border-start border-secondary pb-2 position-relative">
                                 <div className="dot"></div>
                                 <h5 className="text-white">Bachelor of Computer Applications</h5>
-                                <p className="text-primary-neon small fw-bold">Your University | 2021 - 2024</p>
+                                <p className="text-primary-neon small fw-bold">RTMNU University | 2021 - 2024</p>
                                 <p className="text-dim">Focused on Web Technologies, Data Structures, and Software Engineering principles.</p>
                             </div>
                         </div>

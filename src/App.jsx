@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -15,21 +16,26 @@ import './assets/style/cursor.css';
 
 function App() {
   return (
-    <div className="App">
-      <Cursor />
-      <Header />
-      <div id="home"><Home /></div>
-      <div id="about"><About /></div>
-      <div id="skills"><Skills /></div>
-      <div id="projects"><Projects /></div>
-      <div id="contact"><Contact /></div>
-      {/* <div id="resume"><Resume /></div> */}
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="App">
+        <Cursor />
+        <Header />
+        
         <Routes>
+          <Route path="/" element={
+            <>
+              <div id="home"><Home /></div>
+              <div id="about"><About /></div>
+              <div id="skills"><Skills /></div>
+              <div id="projects"><Projects /></div>
+              <div id="contact"><Contact /></div>
+            </>
+          } />
+
           <Route path="/resume" element={<Resume />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
