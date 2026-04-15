@@ -146,8 +146,8 @@
 .bottom-bar {
     position: absolute;
     bottom: 20px;
-    right: 155px;
-    gap: 60px;
+    right: 144px;
+    /* gap: 60px; */
 }
 
 .stat-item {

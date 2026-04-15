@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom'; // 1. Link import karein
+import { Link } from 'react-router-dom'; 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
@@ -13,26 +13,25 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
     const containerRef = useRef(null);
 
-    // IDs ko projectData (data file) ke keys se match kiya gaya hai
     const projectData = [
         {
-            id: "cosmelina", // Match with Case Study Data
+            id: "cosmelina", 
             displayId: "01",
             title: "Cosmetic Inventory System",
             category: "Full-Stack Architecture",
-            tech: ["React", "PHP", "MySQL", "Tailwind"],
+            tech: ["React", "PHP", "MySQL", "Bootstrap"],
             image: inventoryImage
         },
         {
-            id: "pepsi", // Match with Case Study Data
+            id: "pepsi", 
             displayId: "02",
             title: "Cold Drink Interactive",
             category: "Motion & Animation",
-            tech: ["HTML", "GSAP", "Three.js"],
+            tech: ["HTML", "GSAP", "JavaScript"],
             image: coldDrinkImage
         },
         {
-            id: "portfolio", // Match with Case Study Data
+            id: "portfolio", 
             displayId: "03",
             title: "Portfolio",
             category: "Personal Brand",
@@ -103,7 +102,6 @@ const Projects = () => {
                                         </div>
 
                                         <div className="project-actions mt-5 d-flex gap-4">
-                                            {/* 2. Link ka use kiya dynamic ID ke saath */}
                                             <Link 
                                                 to={`/case-study/${project.id}`} 
                                                 className="main-project-link text-decoration-none" 

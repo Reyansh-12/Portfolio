@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { FaDownload, FaBriefcase, FaGraduationCap, FaCode } from "react-icons/fa";
+import { GrProjects } from "react-icons/gr";
 import '../assets/style/resume.css'; 
 
 const Resume = () => {
@@ -36,7 +37,7 @@ const Resume = () => {
                             <h6 className="text-primary-neon text-uppercase ls-5">My Journey</h6>
                             <h2 className="display-3 fw-bold text-white">Resume</h2>
                         </div>
-                        <a href="/path-to-your-pdf.pdf" download className="main-project-link mb-2 text-black">
+                        <a href="/Reyansh_resume.pdf" download="Reyansh_resume.pdf" className="main-project-link mb-2 text-black">
                             Download CV <FaDownload className="ms-2" />
                         </a>
                     </div>
@@ -71,31 +72,32 @@ const Resume = () => {
                             <div className="experience-item ps-4 border-start border-secondary pb-2 position-relative">
                                 <div className="dot"></div>
                                 <h5 className="text-white">Bachelor of Computer Applications</h5>
-                                <p className="text-primary-neon small fw-bold">RTMNU University | 2021 - 2024</p>
-                                <p className="text-dim">Focused on Web Technologies, Data Structures, and Software Engineering principles.</p>
+                                <p className="text-primary-neon small fw-bold">RTMNU University | 2020 - 2023</p>
+                                <p className="text-dim">Focused on Web Technologies, Data Structures.</p>
+                                <p>Percentage :- 60%</p>
                             </div>
                         </div>
                         <div className="resume-card mb-5">
                             <h4 className="text-white mb-4 d-flex align-items-center">
-                                <FaGraduationCap className="text-primary-neon me-3" /> Projects
+                                <GrProjects className="text-primary-neon me-3" /> Projects
                             </h4>
                             <div className="experience-item ps-4 border-start border-secondary pb-2 position-relative">
                                 <div className="dot"></div>
                                 <h5 className="text-white">Cosmetic Inventory Management</h5>
-                                <p className="text-primary-neon small fw-bold"> 2021 - 2024</p>
-                                <p className="text-dim">Focused on Web Technologies, Data Structures, and Software Engineering principles.</p>
+                                <p className="text-primary-neon small fw-bold"> November 2025 - March 2026</p>
+                                <p className="text-dim">Web-based system to manage and track cosmetic products, stock levels, and sales.</p>
                             </div>
                             <div className="experience-item ps-4 border-start border-secondary pb-2 position-relative">
                                 <div className="dot"></div>
                                 <h5 className="text-white">Portfolio</h5>
-                                <p className="text-primary-neon small fw-bold"> 2021 - 2024</p>
-                                <p className="text-dim">Focused on Web Technologies, Data Structures, and Software Engineering principles.</p>
+                                <p className="text-primary-neon small fw-bold"> April 2026</p>
+                                <p className="text-dim">Personal website showcasing projects, skills, and experience using modern web technologies.</p>
                             </div>
                             <div className="experience-item ps-4 border-start border-secondary pb-2 position-relative">
                                 <div className="dot"></div>
                                 <h5 className="text-white">Cold Drink</h5>
                                 <p className="text-primary-neon small fw-bold"> 2021 - 2024</p>
-                                <p className="text-dim">Focused on Web Technologies, Data Structures, and Software Engineering principles.</p>
+                                <p className="text-dim">Static website featuring animated UI and interactive effects using GSAP.</p>
                             </div>
                         </div>
                     </div>

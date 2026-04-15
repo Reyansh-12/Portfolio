@@ -116,7 +116,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-lg-3 d-none d-lg-block">
-                            <div className="visual-element">
+                            <div className="visual-element" style={{transform:'translate(-98px, 0px)'}}>
                                 <div className="rotating-border" />
                                 <div className="profile-mask">
                                     <div className="profile-img-bg" />

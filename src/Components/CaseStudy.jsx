@@ -4,6 +4,7 @@ import { Container, Row, Col, Badge, Button } from 'react-bootstrap';
 import { projectData } from '../data/projects';
 import { motion } from 'framer-motion';
 import { FaGithub, FaArrowLeft } from 'react-icons/fa';
+import '../assets/style/casestudy.css';
 
 const CaseStudy = () => {
     const { projectId } = useParams();
@@ -71,7 +72,7 @@ const CaseStudy = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-primary-neon w-100 mt-4 py-3 d-flex align-items-center justify-content-center gap-2 fw-bold text-dark">
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn github-btn w-100 mt-4 py-3 d-flex align-items-center justify-content-center gap-2 fw-bold">
                                 <FaGithub /> View Source Code
                             </a>
                         </div>

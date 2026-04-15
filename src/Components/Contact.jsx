@@ -85,7 +85,7 @@ const Contact = () => {
                                     </div>
                                     <div className="col-12">
                                         <div className="input-group-modern">
-                                            <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                                            <textarea className='mb-0' placeholder="Tell me about your project..." rows="5" required></textarea>
                                             <span className="focus-border"></span>
                                         </div>
                                     </div>

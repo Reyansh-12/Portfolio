@@ -1,0 +1,13 @@
+.github-btn{
+    background: linear-gradient(90deg, #333 0%, #555 50%, #333 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s ease, transform 0.2s ease;
+}
+.github-btn:hover {
+    background: linear-gradient(90deg, #555 0%, #333 50%, #555 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    
+}

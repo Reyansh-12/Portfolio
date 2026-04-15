@@ -6,7 +6,7 @@ export const projectData = {
     cosmelina: {
         title: "Cosmetic Inventory System",
         category: "Full-Stack Architecture",
-        tech: ["React", "PHP", "MySQL", "Tailwind"],
+        tech: ["React", "PHP", "MySQL", "Bootstrap"],
         image: inventoryImage,
         description: "A professional inventory management system built for high-end cosmetic brands. It features real-time stock tracking and a minimalist dashboard.",
         challenge: "Handling complex MySQL relationships while keeping the frontend state in sync without page reloads.",
@@ -17,7 +17,7 @@ export const projectData = {
     pepsi: {
         title: "Cold Drink Interactive",
         category: "Motion & Animation",
-        tech: ["HTML", "GSAP", "Three.js"],
+        tech: ["HTML", "GSAP", "JavaScript"],
         image: coldDrinkImage,
         description: "An immersive 3D experience designed to showcase beverages. It uses WebGL for realistic lighting and textures.",
         challenge: "Making 3D objects responsive across different screen sizes while maintaining high frame rates.",
