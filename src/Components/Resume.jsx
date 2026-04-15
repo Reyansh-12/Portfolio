@@ -56,15 +56,15 @@ const Resume = () => {
                                 <p className="text-dim">Built a Cosmetic Inventory System using React and PHP. Optimized database queries and implemented GSAP animations for better UX.</p>
                             </div>
 
-                            <div className="experience-item ps-4 border-start border-secondary pb-4 position-relative">
+                            {/* <div className="experience-item ps-4 border-start border-secondary pb-4 position-relative">
                                 <div className="dot"></div>
                                 <h5 className="text-white">Web Designer</h5>
                                 <p className="text-primary-neon small fw-bold">Freelance | 2022 - 2023</p>
                                 <p className="text-dim">Designed and developed high-converting landing pages for various clients using Three.js and modern CSS frameworks.</p>
-                            </div>
+                            </div> */}
                         </div>
 
-                        <div className="resume-card">
+                        <div className="resume-card mb-5">
                             <h4 className="text-white mb-4 d-flex align-items-center">
                                 <FaGraduationCap className="text-primary-neon me-3" /> Education
                             </h4>
@@ -72,6 +72,29 @@ const Resume = () => {
                                 <div className="dot"></div>
                                 <h5 className="text-white">Bachelor of Computer Applications</h5>
                                 <p className="text-primary-neon small fw-bold">RTMNU University | 2021 - 2024</p>
+                                <p className="text-dim">Focused on Web Technologies, Data Structures, and Software Engineering principles.</p>
+                            </div>
+                        </div>
+                        <div className="resume-card mb-5">
+                            <h4 className="text-white mb-4 d-flex align-items-center">
+                                <FaGraduationCap className="text-primary-neon me-3" /> Projects
+                            </h4>
+                            <div className="experience-item ps-4 border-start border-secondary pb-2 position-relative">
+                                <div className="dot"></div>
+                                <h5 className="text-white">Cosmetic Inventory Management</h5>
+                                <p className="text-primary-neon small fw-bold"> 2021 - 2024</p>
+                                <p className="text-dim">Focused on Web Technologies, Data Structures, and Software Engineering principles.</p>
+                            </div>
+                            <div className="experience-item ps-4 border-start border-secondary pb-2 position-relative">
+                                <div className="dot"></div>
+                                <h5 className="text-white">Portfolio</h5>
+                                <p className="text-primary-neon small fw-bold"> 2021 - 2024</p>
+                                <p className="text-dim">Focused on Web Technologies, Data Structures, and Software Engineering principles.</p>
+                            </div>
+                            <div className="experience-item ps-4 border-start border-secondary pb-2 position-relative">
+                                <div className="dot"></div>
+                                <h5 className="text-white">Cold Drink</h5>
+                                <p className="text-primary-neon small fw-bold"> 2021 - 2024</p>
                                 <p className="text-dim">Focused on Web Technologies, Data Structures, and Software Engineering principles.</p>
                             </div>
                         </div>
